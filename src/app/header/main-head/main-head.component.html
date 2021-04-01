@@ -1,0 +1,120 @@
+<div class="row">
+  <div class="col-12">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-4">
+      <a class="navbar-brand" routerLink="/">
+        <img src="../../../assets/images/st_logo.JPG" class="m-2 rounded-circle" width="40px" alt="">
+        <span class="h3 edit-title">THE SWEETTALE</span>
+      </a>
+      <button class="navbar-toggler float-left" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+        &#9776;
+      </button>
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li ngbDropdown class="nav-item nav-btn-style">
+            <a href (click)="false" class="nav-link" ngbDropdownToggle>Birthday Gifts</a>
+            <div ngbDropdownMenu class="p-0 border-0 show-dropdown-menu">
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Birthday
+                Cake</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">New
+                Arrivals</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Best
+                Sellers</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Chocolate
+                Lovers</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Birthday
+                Cupcakes</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Personalized
+                Cakes</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Milestone
+                Cakes</button>
+              <button ngbDropdownItem class="dropdown-btn-style border-0" (click)="isMenuCollapsed = true">Gluten Free
+                Bakery
+                Cakes</button>
+            </div>
+          </li>
+          <li ngbDropdown class="nav-item nav-btn-style">
+            <a href (click)="false" class="nav-link" ngbDropdownToggle>Occasions</a>
+            <div ngbDropdownMenu class="p-0 border-0 show-dropdown-menu">
+              <div class="row row-style">
+                <div class="col-6 column-style">
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Happy
+                    Birthday</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Easter</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Happy
+                    Anniversary</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Thinking Of
+                    You</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">I'm Sorry</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Valentine's
+                    Day</button>
+                </div>
+                <div class="col-6 column-style">
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Thank You</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">LOVE</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Congratulations</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Get Well
+                    Soon</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Best Wishes</button>
+                  <button ngbDropdownItem class="column-btn-style" (click)="isMenuCollapsed = true">Sympathy</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li ngbDropdown class="nav-item nav-btn-style">
+            <a href (click)="false" class="nav-link" ngbDropdownToggle>Bussiness Gifts</a>
+            <div ngbDropdownMenu class="p-0 border-0 show-dropdown-menu show-right">
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Corporate Birthday
+                Gifts</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Custom Business Gift
+                Delivery</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Corporate Events Gift
+                Delivery</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Business Holiday
+                Gifts</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">Business Gift
+                Certificates</button>
+              <button ngbDropdownItem class="dropdown-btn-style" (click)="isMenuCollapsed = true">New Arrivals</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="navbar-nav w-50">
+        <a class="navbar-brand mr-auto ml-auto" routerLink="#">
+          
+        </a>
+      </div> -->
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item nav-icon-style">
+            <a routerLink="#" class="nav-link"><img src="../../../assets/images/search-black-18dp.svg" width="20px" alt="Search Icon" title="Search"></a>
+          </li>
+          <li  class="nav-item nav-icon-style">
+            <a routerLink="login" class="nav-link"><img src="../../../assets/images/login-black-18dp.svg" width="20px" alt="Login Icon" title="Login"></a>
+          </li>
+          <li class="nav-item nav-icon-style">
+            <a routerLink="#" class="nav-link"><img src="../../../assets/images/shopping_cart-24px.svg" width="20px" alt="Cart Icon" title="Shopping Cart"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <div class="bg-dark text-light">
+      <ul class="list-inline text-center m-0">
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">CAKES</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">CUPCAKES</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">CHEESECAKES</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">COOKIES</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">BROWNIES</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">PIES</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">PERSONALIZED</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">TOWERS</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">BASKETS</li>
+        <li class="list-inline-item pl-2 pr-2" role="button" routerLink="#">MILITARY</li>
+      </ul>
+    </div>
+  </div>
+</div>
